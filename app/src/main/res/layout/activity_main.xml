@@ -7,33 +7,114 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="mx.evisoft.mismapas.MainActivity">
-    
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ir_angel_indep"
-        android:onClick="irMapa"
-        android:tag="angelIndependencia"/>
 
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ir_alameda"
-        android:onClick="irMapa"
-        android:tag="alamedaCentral"/>
+        android:orientation="horizontal">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/ir_antropologia"
-        android:onClick="irMapa"
-        android:tag="antropologia"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
 
-    <Button
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/img_angel"
+                android:text="@string/ir_angel_indep"
+                android:onClick="irMapa"
+                android:tag="angelIndependencia"/>
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ir_angel_indep"
+                android:onClick="irMapa"
+                android:tag="angelIndependencia"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/img_angel"
+                android:onClick="irMapa"
+                android:tag="alamedaCentral"/>
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ir_alameda"
+                android:onClick="irMapa"
+                android:tag="alamedaCentral"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ir_zocalo"
-        android:onClick="irMapa"
-        android:tag="zocalo"/>
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/img_angel"
+                android:text="@string/ir_antropologia"
+                android:onClick="irMapa"
+                android:tag="antropologia"/>
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ir_antropologia"
+                android:onClick="irMapa"
+                android:tag="antropologia"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <ImageButton
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:background="@drawable/img_angel"
+                android:text="@string/ir_zocalo"
+                android:onClick="irMapa"
+                android:tag="zocalo"/>
+
+            <Button
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:text="@string/ir_zocalo"
+                android:onClick="irMapa"
+                android:tag="zocalo"/>
+
+         </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
