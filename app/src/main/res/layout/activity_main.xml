@@ -47,7 +47,7 @@
             <ImageButton
                 android:layout_width="170dp"
                 android:layout_height="170dp"
-                android:background="@drawable/img_angel"
+                android:background="@drawable/img_alameda"
                 android:onClick="irMapa"
                 android:tag="alamedaCentral"/>
 
@@ -77,7 +77,7 @@
             <ImageButton
                 android:layout_width="170dp"
                 android:layout_height="170dp"
-                android:background="@drawable/img_angel"
+                android:background="@drawable/img_antropologia"
                 android:text="@string/ir_antropologia"
                 android:onClick="irMapa"
                 android:tag="antropologia"/>
@@ -101,7 +101,7 @@
             <ImageButton
                 android:layout_width="170dp"
                 android:layout_height="170dp"
-                android:background="@drawable/img_angel"
+                android:background="@drawable/img_zocalo"
                 android:text="@string/ir_zocalo"
                 android:onClick="irMapa"
                 android:tag="zocalo"/>
