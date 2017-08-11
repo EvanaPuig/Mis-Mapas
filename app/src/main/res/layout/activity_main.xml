@@ -1,15 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="mx.evisoft.mismapas.MainActivity">
     
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/ir_mapas"
-        android:onClick="irMapa"/>
+        android:text="@string/ir_angel_indep"
+        android:onClick="irMapa"
+        android:tag="angelIndependencia"/>
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_alameda"
+        android:onClick="irMapa"
+        android:tag="alamedaCentral"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_antropologia"
+        android:onClick="irMapa"
+        android:tag="antropologia"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ir_zocalo"
+        android:onClick="irMapa"
+        android:tag="zocalo"/>
+
+</LinearLayout>

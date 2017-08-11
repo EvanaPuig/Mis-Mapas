@@ -7,6 +7,8 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
+    private String placeName;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void irMapa(View v){
         Intent intent = new Intent(this, MapsActivity.class);
+        intent.putExtra("placeName", v.getTag().toString());
         startActivity(intent);
     }
 }
